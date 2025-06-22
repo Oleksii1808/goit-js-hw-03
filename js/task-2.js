@@ -1,7 +1,9 @@
 function makeArray(firstArray, secondArray, maxLength) {
   const doubleArray = firstArray.concat(secondArray);
-  if (doubleArray.length >= maxLength) {
+  if (doubleArray.length > maxLength) {
     return doubleArray.slice(0, maxLength);
+  }else{
+    return doubleArray;
   }
 }
 
